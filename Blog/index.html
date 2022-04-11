@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Favicon -->
+    <link rel="stylesheet" href="">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+
+            <a href="./index.html">
+                <h2 class="logo">ParTicles</h2>
+            </a>
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <!-- Mobile -->
+                    <li class="list-item mobile">
+                        <form action="" class="form">
+                            <input type="text" class="form-input" placeholder="Search">
+                            <button class="btn form-btn" type="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="list-item mobile"> 
+                        <a href="#" class="list-link">
+                            <button class="btn place-items-center" id="theme-toggle-btn-mobile">
+                                <i class="ri-sun-line sun-icon"></i>
+                                <i class="ri-moon-line moon-icon"></i>
+                            </button>
+                        </a>
+                    </li>
+                    <!--  end of mobile -->
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item"> 
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link screen-lg-hidden">Sign In</a>
+                        <li class="list-item">
+                            <a href="#" class="list-link screen-lg-hidden">Sign Up</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="list list-right">
+                <button class="btn place-items-center hideForMobile" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center hideForMobile" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <div><a href="#" class="list-link screen-sm-hidden ">Sign In</a></div>
+                <div>
+                    <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="Search">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or Click ESC to close</span>
+        </div>
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <!-- Featured Articles -->
+    <section class="featured-articles section-header-offset">
+
+        <div class="featured-articles-container container d-grid">
+
+            <div class="featured-content d-grid">
+
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking News</span>
+                    </h3>
+                    <h6>
+                    <span class="headline-description">Water found on Mars!</span>
+                    </h6>
+                </div>
+
+                <a href="./post.html" class="article featured-article featured-article-1">
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=578&q=80" alt="" class="article-image">
+                <span class="article-category">Technology</span>
+
+                <div class="article-data-container">
+
+                    <div class="article-data">
+                        <span>Dec 31st 1300</span>
+                        <span class="article-data-spacer"></span>
+                        <span>3 min read</span>
+                    </div>
+                    <h3 class="title article-title">Is AR even enough?</h3>
+                </div>
+                </a>
+                <!-- ------------------------------------------------------------------------- -->
+                <a href="./post.html" class="article featured-article featured-article-2">
+                    <img src="https://images.unsplash.com/photo-1501494278684-d0fb421388ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=467&q=80" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+    
+                    <div class="article-data-container">
+    
+                        <div class="article-data">
+                            <span>Feb 29th 2900</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 mins read</span>
+                        </div>
+    
+                        <h3 class="title article-title">The Sun Got Us</h3>
+                    </div>
+                    </a>
+                    <!-- --------------------------------------------------------------------------- -->
+                    <a href="./post.html" class="article featured-article featured-article-3">
+                        <img src="https://images.unsplash.com/photo-1648073380875-5a46e345ecf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+                        <span class="article-category">Technology</span>
+        
+                        <div class="article-data-container">
+        
+                            <div class="article-data">
+                                <span>Feb 29th 2900</span>
+                                <span class="article-data-spacer"></span>
+                                <span>7 mins read</span>
+                            </div>
+        
+                            <h3 class="title article-title">Adieus hunted end plenty?</h3>
+                        </div>
+                        </a>
+                        <!-- ---------------------------------------------------------------------- -->
+            </div>
+            <!-- Sidebar -->
+    <div class="sidebar d-grid ">
+
+        <h3 class="title featured-content-title">Trending News</h3>
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">01</span>
+                    <img src="https://images.unsplash.com/photo-1646729324090-2e5910f17630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="article-image">
+                </div>
+                <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Nov 21st 1970</span>
+                        <span class="article-data-spacer"></span>
+                        <span>12 min read</span>
+                    </div>
+                    <h3 class="title article-title">How long to colonize Mars?</h3>
+                </div>
+            </a>
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+                <span class="trending-number place-items-center">02</span>
+                <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+                <div class="article-data">
+                    <span>Dec 31st 1300</span>
+                    <span class="article-data-spacer"></span>
+                    <span>3 min read</span>
+                </div>
+                <h3 class="title article-title">Imagine Do Again</h3>
+            </div>
+        </a>
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+                <span class="trending-number place-items-center">03</span>
+                <img src="https://images.unsplash.com/photo-1646638546616-706e664f065b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+                <div class="article-data">
+                    <span>Dec 31st 1300</span>
+                    <span class="article-data-spacer"></span>
+                    <span>3 min read</span>
+                </div>
+                <h3 class="title article-title">People do merits</h3>
+            </div>
+        </a>
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+                <span class="trending-number place-items-center">04</span>
+                <img src="https://images.unsplash.com/photo-1643885824304-0d4d4771e030?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+                <div class="article-data">
+                    <span>Dec 31st 1300</span>
+                    <span class="article-data-spacer"></span>
+                    <span>3 min read</span>
+                </div>
+                <h3 class="title article-title">Thanos do merits</h3>
+            </div>
+        </a>
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+        <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+                <span class="trending-number place-items-center">05</span>
+                <img src="https://images.unsplash.com/photo-1645213650597-51d6721b5d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="article-image">
+            </div>
+            <div class="trending-news-data">
+                <div class="article-data">
+                    <span>Dec 31st 1300</span>
+                    <span class="article-data-spacer"></span>
+                    <span>3 min read</span>
+                </div>
+                <h3 class="title article-title">Arcadian do merits</h3>
+            </div>
+        </a>
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+    </div>
+        </div>
+    </section>
+    
+    <!-- ---------------------------------------------------Quick Read -->
+    <section class="quick-read section">
+        <div class="container">
+            <h2 class="title section-title" data-name="Quick Read">Quick Read</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <a href="#" class="article swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1649119947511-e56da6f1fa1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How long to colonize Solar System?</h3>
+                    </div>
+                    </a>
+                    <!------------------------------------------------------------------------------------------------------>
+                    <a href="#" class="article swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1649256308437-e93443143e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="" class="article-image">
+    
+                        <div class="article-data-container">
+    
+                            <div class="article-data">
+                                <span>Nov 21st 1970</span>
+                                <span class="article-data-spacer"></span>
+                                <span>12 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">How long to colonize Planet Mars?</h3>
+                        </div>
+                        </a>
+                        <!-- ---------------------------------------------------------------------------------------------- -->
+                        <a href="#" class="article swiper-slide">
+                            <img src="https://images.unsplash.com/photo-1649079800856-4b9c19d64ab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="article-image">
+        
+                            <div class="article-data-container">
+        
+                                <div class="article-data">
+                                    <span>Nov 21st 1970</span>
+                                    <span class="article-data-spacer"></span>
+                                    <span>12 min read</span>
+                                </div>
+        
+                                <h3 class="title article-title">How long to colonize Andromeda?</h3>
+                            </div>
+                            </a>
+                            <!-- ------------------------------------------------------------------------------------------------- -->
+                            <a href="#" class="article swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1622086962257-806da26e04d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+            
+                                <div class="article-data-container">
+            
+                                    <div class="article-data">
+                                        <span>Nov 21st 1970</span>
+                                        <span class="article-data-spacer"></span>
+                                        <span>12 min read</span>
+                                    </div>
+            
+                                    <h3 class="title article-title">How long to become Interplanetery?</h3>
+                                </div>
+                                </a>
+                                <!-- -------------------------------------------------------------------------------------------- -->
+                                <a href="#" class="article swiper-slide">
+                                    <img src=https://images.unsplash.com/photo-1648627431584-0cfb2eaa9db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+                
+                                    <div class="article-data-container">
+                
+                                        <div class="article-data">
+                                            <span>Nov 21st 1970</span>
+                                            <span class="article-data-spacer"></span>
+                                            <span>12 min read</span>
+                                        </div>
+                
+                                        <h3 class="title article-title">How long to colonize Mars?</h3>
+                                    </div>
+                                    </a>
+                                    <!-- --------------------------------------------------------------------------------------- -->
+                                    <a href="#" class="article swiper-slide">
+                                        <img src="https://images.unsplash.com/photo-1649100255346-cfec393783f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="" class="article-image">
+                    
+                                        <div class="article-data-container">
+                    
+                                            <div class="article-data">
+                                                <span>Nov 21st 1970</span>
+                                                <span class="article-data-spacer"></span>
+                                                <span>12 min read</span>
+                                            </div>
+                    
+                                            <h3 class="title article-title">How long to colonize Mars?</h3>
+                                        </div>
+                                        </a>
+                </div>
+                <!-- Swiper Buttons -->
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Older Posts -->
+    <section class="older-posts section">
+        <div class="container">
+            <h2 class="title section-title" data-name="Older Posts">Older Posts</h2>
+
+            <div class="older-posts-grid-wrapper d-grid">
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"   class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How long to colonize Mars?</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+                <!-- ------------------------------------------------------------------------------ -->
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Free from Gravity</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+                <!-- ---------------------------------------------------------------------------- -->
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1649275598417-71b09aa8c4cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">How long to colonize Mars?</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+                <!-- ------------------------------------------------------------------------------------ -->
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1547974486-cf573b27fe2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">It means no Worries!</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+                <!-- ---------------------------------------------------------------------------------------- -->
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1490897457030-b3a8bb388547?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">About 280 Feets</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+                <!-- ------------------------------------------------------------------------------------- -->
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1591606183252-ee01e1867a32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                
+                        <div class="article-data">
+                            <span>Nov 21st 1970</span>
+                            <span class="article-data-spacer"></span>
+                            <span>12 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Perceive, Perspire, Contrast</h3>
+                        <p class="article-description">Reasonable appearance companions oh by remarkably me invitation understood. 
+                            Pursuit elderly ask perhaps all.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="see-more-container">
+                <a href="#" class="btn see-more-btn place-items-center">
+                    See More <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Tags -->
+    <section class="popular-tags section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Popular Tags">Popular Tags</h2>
+
+            <div class="popular-tags-container d-grid">
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Fitness</span>
+                    <img src="https://images.unsplash.com/photo-1627483298235-f3bac2567c1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="article-image">
+                </a>
+                <!--  -->
+                <a href="#" class="article">
+                    <span class="tag-name">#Nature</span>
+                    <img src="https://images.unsplash.com/photo-1618874571406-966ce895f4d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" class="article-image">
+                </a>
+                <!--  -->
+                <a href="#" class="article">
+                    <span class="tag-name">#Health</span>
+                    <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="article-image">
+                </a>
+                <!--  -->
+                <a href="#" class="article">
+                    <span class="tag-name">#Travel</span>
+                    <img src="https://images.unsplash.com/photo-1649367765043-d3a6ba143443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+                </a>
+                <!--  -->
+                <a href="#" class="article">
+                    <span class="tag-name">#Technology</span>
+                    <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80" alt="" class="article-image">
+                </a>
+                <!--  -->
+                <a href="#" class="article">
+                    <span class="tag-name">#Food</span>
+                    <img src="https://images.unsplash.com/photo-1610415958681-7aabb05711f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-image">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div class="container">
+            
+            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+
+                <h6 class="title newsletter-title">Subscribe To ParTicles</h6>
+                <p class="newsletter-description">Manners she wishing justice hastily new anxious.</p>
+
+                <form action="" class="form">
+                    <input type="text" class="form-input" placeholder="Read Our Newsletter?">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">ParTicles</h2>
+                </a>
+                <p class="company-description">
+                    Did had way law dinner square tastes. 
+                    Recommend concealed yet her procuring see consulted depending. 
+                    Adieus hunted
+                </p>
+
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy; 2022 ParTicles. All Rights Reserved</span>
+            </div>
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="class-link">Molecules</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Atoms</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Wave</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Gamma</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Ultra</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Dense</a>
+                    </li>
+                    
+                </ul>
+                </div>
+                <!--  -->
+                <div>
+                <h6 class="title footer-title">Company</h6>
+
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="class-link">Molecules</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Atoms</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Wave</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Gamma</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Ultra</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="class-link">Dense</a>
+                    </li>
+                    
+                </ul>
+            </div>
+                <!--  -->
+                <div>
+                    <h6 class="title footer-title">Computers</h6>
+    
+                    <ul class="list footer-list">
+                        <li class="list-item">
+                            <a href="#" class="class-link">Molecules</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="class-link">Atoms</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="class-link">Wave</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="class-link">Gamma</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="class-link">Ultra</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="class-link">Dense</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
