@@ -1,0 +1,39 @@
+.body {
+    background: #f4fafa;
+}
+.gameBoy{
+    display: flex;
+  flex-direction: column;
+}
+canvas{
+    display: inline;
+    vertical-align: top;
+    float: left;
+}
+
+#tetris {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* border-bottom: 1px solid black;
+    border-right: 1px solid black; */
+}
+
+#score {
+    display: inline-block;
+}
+
+.scoreBoard {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.miniCanvasElement{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
