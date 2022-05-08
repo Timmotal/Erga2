@@ -78,8 +78,8 @@ drawMiniBoard();
 
 const PIECES = [  
     [Z,"red"],
-    [S,"green"], // now i know that we put the constant into the PIECES array
-    [T,"yellow"],  // there is a bug with this tetromino, i think i will have to go through finished project to figure or its my typo
+    [S,"green"], 
+    [T,"yellow"],  // there is a bug with this tetromino
     [O,"blue"],
     [L,"purple"],
     [I,"cyan"],
@@ -116,10 +116,6 @@ function Piece(tetromino, colour) {
     this.y = 0; 
 }
 
-//===================================================================
-
-//===================================================================
-
 
 // fill function
 Piece.prototype.fill= function(colour) {
@@ -134,7 +130,6 @@ Piece.prototype.fill= function(colour) {
 }
 
 // draw mini square grid
-// ? my question how did we connect tetrominoes and boards and squares together
 Piece.prototype.fillMini= function(colour) {
     for( rm = 0; rm < this.activeTetromino.length; rm++) {
         for( cm = 0; cm < this.activeTetromino.length; cm++) {
@@ -163,7 +158,7 @@ Piece.prototype.fillMini= function(colour) {
 // we refactored all of the above from line 100 to this
 // DRAW A PIECE TO THE BOARD
 Piece.prototype.draw = function() {
-    this.fill(this.colour); // following that fed up youtube dude actually mentioned to google everything you do to understand "THIS" keyword
+    this.fill(this.colour); 
     this.fillMini(this.colour); // took you long enough
 }
 // end 
